@@ -10,6 +10,7 @@ Online payment fraud is increasing rapidly. Traditional rule-based systems fail 
 This project uses a trained Machine Learning model to predict whether a transaction is:
 
 •	✅ Not a Fraud Transaction
+
 •	❌ Fraud Transaction
 
 The system takes transaction details as input and provides instant prediction through a web interface.
