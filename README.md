@@ -58,17 +58,30 @@ http://127.0.0.1:5000/
 🧠 How It Works
 
 User enters transaction details:
+
 Step
+
 Type
+
 Amount
+
 Old Balance (Sender)
+
 New Balance (Sender)
+
 Old Balance (Receiver)
+
 New Balance (Receiver)
+
 Transaction type is encoded using encoder.pkl.
+
 Data is passed to trained ML model (model.pkl).
+
 Model predicts:
+
 1 → Fraud Transaction
+
 0 → Not a Fraud Transaction
+
 Result is displayed on the webpage.
 
