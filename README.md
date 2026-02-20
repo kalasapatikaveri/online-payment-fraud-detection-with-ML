@@ -42,7 +42,7 @@ ________________________________________
 
 1️⃣ Clone the Repository
 
-git clone https://github.com/chaitanyaNageli/Payment-Fraud-Detection-Using-ML.git
+git clone https://github.com/kalasapatikaveri/online-payment-fraud-detection-with-ML.git
 cd fraud-detection
 
 2️⃣ Install Dependencies
