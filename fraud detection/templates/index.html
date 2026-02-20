@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fraud Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
 
+    <h1>Online Payment Fraud Detection</h1>
+
+    <form action="/predict" method="post">
+
+        <input type="number" name="step" placeholder="Step" required>
+
+        <select name="type" required >
+            <option >choose</option>
+            <option value="PAYMENT">PAYMENT</option>
+            <option value="TRANSFER">TRANSFER</option>
+            <option value="CASH_OUT">CASH_OUT</option>
+            <option value="DEBIT">DEBIT</option>
+            <option value="CASH_IN">CASH_IN</option>
+        </select>
+
+        <input type="number" step="any" name="amount" placeholder="Amount" required>
+
+        <input type="number" step="any" name="oldbalanceOrg" placeholder="Old Balance Origin" required>
+
+        <input type="number" step="any" name="newbalanceOrig" placeholder="New Balance Origin" required>
+
+        <input type="number" step="any" name="oldbalanceDest" placeholder="Old Balance Destination" required>
+
+        <input type="number" step="any" name="newbalanceDest" placeholder="New Balance Destination" required>
+
+        <button type="submit">Predict</button>
+
+    </form>
+
+    {% if prediction_text %}
+        <h2>{{ prediction_text }}</h2>
+    {% endif %}
+
+</body>
+</html>
